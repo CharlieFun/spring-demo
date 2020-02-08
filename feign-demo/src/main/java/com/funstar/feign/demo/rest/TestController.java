@@ -4,6 +4,7 @@ import com.funstar.feign.demo.feign.instance.TestFeign;
 import com.funstar.feign.demo.model.User;
 import com.funstar.feign.demo.service.Animal;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -39,5 +40,11 @@ public class TestController {
     @RequestMapping("/user")
     public User user(String name){
         return testFeign.user(name);
+    }
+
+    @RequestMapping("test")
+    public Object test(@RequestBody User user,boolean tag){
+        System.out.println(user);
+        return tag;
     }
 }

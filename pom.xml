@@ -22,7 +22,8 @@
 	<modules>
 		<module>alipay-demo</module>
 		<module>feign-demo</module>
-	</modules>
+        <module>algorithm</module>
+    </modules>
 
 	<dependencies>
 

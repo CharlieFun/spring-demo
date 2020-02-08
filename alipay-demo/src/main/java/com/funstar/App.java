@@ -3,7 +3,9 @@ package com.funstar;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.DefaultAlipayClient;
+import com.alipay.api.request.AlipayTradeQueryRequest;
 import com.alipay.api.request.AlipayTradeRefundRequest;
+import com.alipay.api.response.AlipayTradeQueryResponse;
 import com.alipay.api.response.AlipayTradeRefundResponse;
 
 /**
@@ -13,9 +15,9 @@ public class App {
     public static void main(String[] args) throws AlipayApiException {
         AlipayClient alipayClient = new DefaultAlipayClient("https://openapi.alipay.com/gateway.do", "APP_ID",
                 "APP_PRIVATE_KEY", "json", "GBK", "ALIPAY_PUBLIC_KEY", "RSA2");
-        AlipayTradeRefundRequest request = new AlipayTradeRefundRequest();
+        AlipayTradeQueryRequest request = new AlipayTradeQueryRequest();
         request.setBizContent("");
-        AlipayTradeRefundResponse response = alipayClient.execute(request);
+        AlipayTradeQueryResponse response = alipayClient.execute(request);
         if (response.isSuccess()) {
             System.out.println("调用成功");
         } else {
