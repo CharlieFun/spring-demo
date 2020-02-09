@@ -9,17 +9,6 @@ import java.util.List;
  */
 public class ReversePrintLinkList {
 
-
-    public static class ListNode {
-        int val;
-        ListNode next = null;
-
-        ListNode(int val) {
-            this.val = val;
-        }
-    }
-
-
     public static ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         ArrayList<Integer> list = new ArrayList<>();
         print(list, listNode);

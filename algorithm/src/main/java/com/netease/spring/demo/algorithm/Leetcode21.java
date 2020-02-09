@@ -10,17 +10,6 @@ package com.netease.spring.demo.algorithm;
 public class Leetcode21 {
 
 
-    //Definition for singly-linked list.
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
-
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode head = new ListNode(0);
         ListNode pre = head;
