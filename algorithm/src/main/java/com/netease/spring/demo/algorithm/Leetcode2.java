@@ -10,17 +10,6 @@ package com.netease.spring.demo.algorithm;
 public class Leetcode2 {
 
 
-    //Definition for singly-linked list.
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
-
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int add = 0;
         ListNode head = new ListNode(0);
