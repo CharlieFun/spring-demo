@@ -1,4 +1,4 @@
-package com.netease.spring.demo.algorithm;
+package com.netease.spring.demo.algorithm.backTracking;
 
 import java.util.LinkedList;
 import java.util.List;
