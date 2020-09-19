@@ -1,4 +1,4 @@
-package com.netease.spring.demo.algorithm.backTracking;
+package com.netease.spring.demo.algorithm.leetcode501_600;
 
 import java.util.LinkedList;
 

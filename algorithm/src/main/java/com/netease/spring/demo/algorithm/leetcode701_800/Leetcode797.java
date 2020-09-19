@@ -1,4 +1,4 @@
-package com.netease.spring.demo.algorithm.backTracking;
+package com.netease.spring.demo.algorithm.leetcode701_800;
 
 import java.util.ArrayList;
 import java.util.Arrays;
