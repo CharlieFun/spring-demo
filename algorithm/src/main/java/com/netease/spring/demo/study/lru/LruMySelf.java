@@ -38,7 +38,9 @@ public class LruMySelf<K, V> {
 
             if (cache.size() > size) {
                 Node oldHead = removeHead();
-                cache.remove(oldHead.key);
+                if (null != oldHead) {
+                    cache.remove(oldHead.key);
+                }
             }
         }
     }
